@@ -1,0 +1,23 @@
+Variables:
+S
+A
+B
+C
+End
+lasdc
+vdf
+Terminals:
+a
+b
+Eps
+End
+Rules:
+S, ASA|aB
+A, B|S
+B, b|Eps
+C, B
+End
+sdc
+fvfv
+eqfvqef
+fev

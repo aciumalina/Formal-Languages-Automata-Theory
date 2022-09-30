@@ -1,0 +1,49 @@
+lalal
+laalal
+lala
+States:
+q1, S
+q2
+q3
+q4
+q5
+qa, accept
+qr, reject
+End
+fvefv
+fverv
+fefv
+Sigma:
+0
+End
+TapeAlph:
+0
+x
+SPACE
+End
+lala
+lalala
+alalala
+Delta:
+q1, 0 = q2, SPACE, R
+q1, SPACE = qr, SPACE, R
+q1, x = qr, x, R
+q2, x = q2, x, R
+q2, 0 = q3, x, R
+q2, SPACE = qa, SPACE, R
+q3, x = q3, x, R
+q3, 0 = q4, 0, R
+q3, SPACE = q5, SPACE, L
+q4, 0 = q3, x, R
+q4, x = q4, x, R
+q4, SPACE = qr, SPACE, R
+q5, x = q5, x, L
+q5, 0 = q5, 0, L
+q5, SPACE = q2, SPACE, R
+q7, Space = q3, x, L
+qa, $ = q1, $, R
+qr, $ = q1, $, R
+End
+Input:
+0000
+End
